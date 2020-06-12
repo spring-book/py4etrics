@@ -14,8 +14,8 @@
 #gapminder
 ## -e git+git@github.com:spring-haru/py4etrics.git#egg=py4etrics-0.1.4
 
-myst-nb
-myst-parser
+#myst-nb
+#myst-parser
 
 
 ###### Requirements with Version Specifiers ######`
