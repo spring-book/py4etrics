@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="canonical" href="https://spring-book.github.io/book_etrics/12_Asymptotics.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="質的変数と回帰分析" href="13_Dummies.html" />
@@ -37,6 +38,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
 
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://spring-book.github.io/book_etrics/12_Asymptotics.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="大標本特性" />
+<meta property="og:description" content="大標本特性  import numpy as np from scipy.stats import norm, chi2, gaussian_kde, t, uniform import matplotlib.pyplot as plt import pandas as pd from statsmodels.form" />
+
+
+<meta name="twitter:card" content="summary">
 
 
   </head>
@@ -170,8 +180,8 @@
         <div class="dropdown-buttons-trigger">
             <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
             <div class="dropdown-buttons sourcebuttons">
-                <a class="repository-button" href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Source repository"><i class="fab fa-github"></i>repository</button></a>
-                <a class="issues-button" href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F12_Asymptotics.html&body=Your%20issue%20content%20here."><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                <a class="repository-button" href="https://github.com/spring-book/py4etrics/"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Source repository"><i class="fab fa-github"></i>repository</button></a>
+                <a class="issues-button" href="https://github.com/spring-book/py4etrics//issues/new?title=Issue%20on%20page%20%2F12_Asymptotics.html&body=Your%20issue%20content%20here."><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
                 
             </div>
         </div>
@@ -186,7 +196,7 @@
             <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
             <div class="dropdown-buttons">
                 
-                <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/12_Asymptotics.ipynb"><button type="button" class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip" data-placement="left"><img class="binder-button-logo" src="_static/images/logo_binder.svg" alt="Interact on binder">Binder</button></a>
+                <a class="binder-button" href="https://mybinder.org/v2/gh/spring-book/py4etrics/master?urlpath=tree/12_Asymptotics.ipynb"><button type="button" class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip" data-placement="left"><img class="binder-button-logo" src="_static/images/logo_binder.svg" alt="Interact on binder">Binder</button></a>
                 
                 
                 
@@ -423,8 +433,8 @@ u = pu_N+(1-p)u_c
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>array([ 0.19003097, -0.67345845, -0.36471033,  1.69058352, -0.35040015,
-       -0.21412879, -0.63685667, -0.65393875, -0.62499442,  0.30212492])
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>array([ 0.34689769, -0.60936828,  0.67261281,  0.81977985,  1.10047051,
+       -0.61948844,  0.77877522, -0.53758387, -0.15622556, -0.50504599])
 </pre></div>
 </div>
 </div>
@@ -452,7 +462,7 @@ u = pu_N+(1-p)u_c
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.018123327050746013
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>-0.0025808786186724358
 </pre></div>
 </div>
 </div>
@@ -564,8 +574,8 @@ u = pu_N+(1-p)u_c
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>array([ 0.27299666,  0.66501259,  0.55572656, ...,  0.52491047,
-       -0.22078873,  1.01524825])
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>array([1.61987974, 0.75657271, 0.94631371, ..., 0.02081059, 0.50885158,
+       0.13126104])
 </pre></div>
 </div>
 </div>
@@ -1031,10 +1041,10 @@ u=\frac{v-1}{\sqrt{2}},\qquad v\sim\chi^2(1)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(1.09305573572308,
- 0.5789565381553451,
- -0.07449139417138682,
- 3.1739850685901527)
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(4.98390814426468,
+ 0.08274811270856189,
+ -0.10775004241840269,
+ 2.5609244889998597)
 </pre></div>
 </div>
 </div>
@@ -1057,10 +1067,10 @@ u=\frac{v-1}{\sqrt{2}},\qquad v\sim\chi^2(1)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(31.790186120332653,
- 1.2498238117653133e-07,
- -0.048498995994550737,
- 1.7685292032183428)
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(33.89307757688864,
+ 4.367286838366986e-08,
+ -0.03906395770736697,
+ 1.7269077988913752)
 </pre></div>
 </div>
 </div>
@@ -1142,7 +1152,7 @@ Kurtosis:                       3.977   Cond. No.                         135.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NormaltestResult(statistic=1.2973690485354024, pvalue=0.5227329672035723)
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NormaltestResult(statistic=7.017360951089625, pvalue=0.029936390185540576)
 </pre></div>
 </div>
 </div>
@@ -1158,7 +1168,7 @@ Kurtosis:                       3.977   Cond. No.                         135.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NormaltestResult(statistic=400.96689613849054, pvalue=8.53384578744717e-88)
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NormaltestResult(statistic=577.4230682798977, pvalue=4.113143497063511e-126)
 </pre></div>
 </div>
 </div>

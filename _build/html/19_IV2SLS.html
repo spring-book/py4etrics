@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="canonical" href="https://spring-book.github.io/book_etrics/19_IV2SLS.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="離散選択モデル" href="20_LogitProbit.html" />
@@ -37,6 +38,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
 
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://spring-book.github.io/book_etrics/19_IV2SLS.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="操作変数法と２段階OLS" />
+<meta property="og:description" content="操作変数法と２段階OLS  import numpy as np import pandas as pd from linearmodels.iv import IV2SLS import wooldridge from scipy.stats import gaussian_kde, multivariate_nor" />
+
+
+<meta name="twitter:card" content="summary">
 
 
   </head>
@@ -170,8 +180,8 @@
         <div class="dropdown-buttons-trigger">
             <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
             <div class="dropdown-buttons sourcebuttons">
-                <a class="repository-button" href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Source repository"><i class="fab fa-github"></i>repository</button></a>
-                <a class="issues-button" href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F19_IV2SLS.html&body=Your%20issue%20content%20here."><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                <a class="repository-button" href="https://github.com/spring-book/py4etrics/"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Source repository"><i class="fab fa-github"></i>repository</button></a>
+                <a class="issues-button" href="https://github.com/spring-book/py4etrics//issues/new?title=Issue%20on%20page%20%2F19_IV2SLS.html&body=Your%20issue%20content%20here."><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
                 
             </div>
         </div>
@@ -186,7 +196,7 @@
             <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
             <div class="dropdown-buttons">
                 
-                <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/19_IV2SLS.ipynb"><button type="button" class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip" data-placement="left"><img class="binder-button-logo" src="_static/images/logo_binder.svg" alt="Interact on binder">Binder</button></a>
+                <a class="binder-button" href="https://mybinder.org/v2/gh/spring-book/py4etrics/master?urlpath=tree/19_IV2SLS.ipynb"><button type="button" class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip" data-placement="left"><img class="binder-button-logo" src="_static/images/logo_binder.svg" alt="Interact on binder">Binder</button></a>
                 
                 
                 
@@ -785,7 +795,7 @@ Dep. Variable:                   educ   R-squared:                      0.2081
 Estimator:                        OLS   Adj. R-squared:                 0.2043
 No. Observations:                 428   F-statistic:                    112.45
 Date:                Fri, Jun 12 2020   P-value (F-stat)                0.0000
-Time:                        16:51:42   Distribution:                  chi2(2)
+Time:                        17:28:29   Distribution:                  chi2(2)
 Cov. Estimator:            unadjusted                                         
                                                                               
                              Parameter Estimates                              
@@ -1160,7 +1170,7 @@ H0: All endogenous variables are exogenous
 Statistic: 2.8035
 P-value: 0.0948
 Distributed: F(1,423)
-WaldTestStatistic, id: 0x7fcd3bbc1fa0
+WaldTestStatistic, id: 0x7ff2a3ca7e20
 </pre></div>
 </div>
 </div>
@@ -1284,7 +1294,7 @@ H0: Endogenous variables are exogenous
 Statistic: 2.8256
 P-value: 0.0928
 Distributed: chi2(1)
-WaldTestStatistic, id: 0x7fcd40c73be0
+WaldTestStatistic, id: 0x7ff2a4bd1be0
 </pre></div>
 </div>
 </div>
@@ -1413,7 +1423,7 @@ H0: The model is not overidentified.
 Statistic: 0.3781
 P-value: 0.5386
 Distributed: chi2(1)
-WaldTestStatistic, id: 0x7fcd3ed6c8b0
+WaldTestStatistic, id: 0x7ff2a3c84580
 </pre></div>
 </div>
 </div>
