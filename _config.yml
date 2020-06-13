@@ -23,7 +23,7 @@ execute:
 html:
   favicon                   : ""  # A path to a favicon image
   navbar_number_sections    : False  # Add a number to each section in your left navbar
-  navbar_footer_text        : '<a  href="https://github.com/spring-book/py4etrics">&#128200;&#127891;&#128202;</a><!-- Default Statcounter code for Py4etrics https://spring-book.github.io/py4etrics/ --> <script type="text/javascript"> var sc_project=12339954; var sc_invisible=1; var sc_security="45ab8946"; </script> <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script> <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12339954/0/45ab8946/1/" alt="Web Analytics"></a></div></noscript> <!-- End of Statcounter Code -->'  # Will be displayed underneath the left navbar.
+  navbar_footer_text        : '<a  href="https://py4etrics.github.io/">&#128200;&#127891;&#128202;</a>'  # Will be displayed underneath the left navbar.
   google_analytics_id       : UA-165998213-1  # A GA id that can be used to track book views.
   home_page_in_navbar       : false  # Whether to include your home page in the left Navigation Bar
   use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
